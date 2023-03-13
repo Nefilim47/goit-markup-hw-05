@@ -243,8 +243,19 @@ a {
 .svg-button {
   height: 8px;
   width: 8px;
-  /* display: flex;
-  justify-content: center; */
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button-exit {
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button-exit:hover,
+.svg-button:hover {
+  background-color: var(--button-hover-color);
+  fill: var(--background-color);
 }
 .modal-button-exit {
   margin: 24px 24px 528px 360px;
@@ -268,9 +279,7 @@ a {
 .future-list .item {
   max-width: 264px;
 }
-/* .future-list .item + .item {
-  margin-left: 24px;
-} */
+
 /* ICONS */
 
 .planing-svg {
