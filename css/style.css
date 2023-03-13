@@ -107,6 +107,9 @@ a {
 }
 
 /* Underline navigation */
+.item .underline-navigation {
+  color: var(--button-hover-color);
+}
 .underline-navigation::after {
   content: "";
   display: block;
@@ -117,7 +120,7 @@ a {
 
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .navigation-site .link:hover,
