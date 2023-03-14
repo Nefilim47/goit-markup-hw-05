@@ -264,7 +264,7 @@ a {
   fill: var(--background-color);
 }
 .modal-button-exit {
-  margin: 24px 24px 528px 360px;
+  margin: 24px 24px 0 360px;
 
   height: 24px;
   width: 24px;
@@ -273,7 +273,57 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
+/* Modal input */
 
+.modal-text {
+  text-align: center;
+  margin: 24px 24px 16px 24px;
+}
+
+.input-text {
+  color: #8e8f99;
+  font-size: 12px;
+  line-height: 1.33;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 24px;
+}
+.form-container {
+  width: 360px;
+  /* height: 58px; */
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-container textarea {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  padding: 8px 0 0 16px;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  height: 120px;
+
+  resize: none;
+}
+
+.modal-button-send {
+  color: var(--background-color);
+  background-color: var(--button-main-color);
+  padding: 16px 32px;
+  margin: 24px 120px;
+}
 /* Section two */
 
 .future-list {
